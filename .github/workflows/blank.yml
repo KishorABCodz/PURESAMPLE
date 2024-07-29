@@ -5,7 +5,7 @@ on:
     branches: [ "*" ]
   repository_dispatch:
     types: [pr-event]
-
+  workflow_dispatch:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
